@@ -1,0 +1,50 @@
+
+.heading-box {
+  display: block;
+  text-align: center;
+  margin-bottom: 5rem;
+  
+}
+.heading-secondary {
+  background-image: linear-gradient(to right bottom, rgb(82, 187, 82), rgb(135, 219, 139));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: .5rem .5rem 2rem rgba(#000, 0.2);
+  transition: all, 0.2s;
+  &:hover {
+    transform: skewX(5deg) skewY(5deg) scale(1.1);
+
+  }
+}
+
+.heading-tertiary {
+    font-size: 1.5rem;
+}
+
+.paragragh {
+  font-size: 1rem;
+}
+
+.photo-box {
+    position: relative;
+}
+.photo {
+    position: absolute;
+    width: 20rem;
+    transition: all, .2s;
+    &-1 {
+        left: 8rem;
+    }
+    &-2 {
+        left: 0rem;
+        top: 5rem;
+    }
+    &-3 {
+        left: 16rem;
+        top: 7rem;
+    }
+    &:hover {
+        transform: scale(1.2) ;
+        z-index: 10;
+    }
+}

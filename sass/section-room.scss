@@ -1,0 +1,12 @@
+.room {
+  &__box {
+    display: inline-block;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+  }
+  &__detail {
+    position: relative;
+    display: inline;
+  }
+}
