@@ -1,0 +1,50 @@
+.footer {
+  background-color: #000;
+  position: relative;
+  padding: 2rem 2rem 10rem 2rem;
+
+  &__logo-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4rem;
+  }
+  &__logo {
+    height: 100%;
+  }
+  &__nav {
+    text-align: center;
+  }
+  &__list {
+    display: inline-block;
+
+
+    &-item {
+      display: inline-block;
+
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  &__copy {
+    text-align: center;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1rem;
+  }
+  &__copyright {
+      
+    color: #fff;
+    font-size: 1rem;
+  }
+  &__copylink {
+    color: rgb(255, 195, 116);
+    text-decoration: none;
+  }
+}
