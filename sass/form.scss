@@ -18,24 +18,34 @@
   &__group {
     width: 100%;
     padding: 1rem;
+    position: relative;
   }
   &__input {
     border: none;
+    width: 80%;
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid rgb(255, 195, 116);
+    border-bottom: 3px solid rgb(255, 195, 116);
     transition: all, 0.2s;
     border-radius: 3px;
+    opacity: .7;
+    &--box {
+      padding: 3rem 1rem;
+    }
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+      opacity: 1;
     }
     &:focus:invalid {
-      border-bottom: 1px solid red;
+      border-bottom: 2px solid red;
+      opacity: 1;
     }
   }
   &__label {
     font-size: 1rem;
     color: #777;
     opacity: 0.5;
+    
+    
   }
 }

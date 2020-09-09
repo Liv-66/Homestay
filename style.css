@@ -14,7 +14,7 @@ body {
 
 html {
   font-size: 100%; }
-  @media screen and (max-width: 75em) {
+  @media screen and (max-width: 90em) {
     html {
       font-size: 70%; } }
   @media screen and (max-width: 56.25em) {
@@ -230,8 +230,20 @@ html {
   font-size: 1.2rem;
   color: #777; }
 
-.button {
-  text-decoration: none; }
+.button__form {
+  text-decoration: none;
+  border: none;
+  background-color: #ffc374;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  color: #fff;
+  transition: all, .2s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .button__form:hover {
+    transform: scale(1.1); }
+  .button__form:active {
+    outline: none;
+    transform: translateY(0.5rem); }
 
 .form__box {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, transparent 50%), url(./img/form.jpeg);
@@ -245,19 +257,26 @@ html {
 
 .form__group {
   width: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+  position: relative; }
 
 .form__input {
   border: none;
+  width: 80%;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ffc374;
+  border-bottom: 3px solid #ffc374;
   transition: all, 0.2s;
-  border-radius: 3px; }
+  border-radius: 3px;
+  opacity: .7; }
+  .form__input--box {
+    padding: 3rem 1rem; }
   .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    opacity: 1; }
   .form__input:focus:invalid {
-    border-bottom: 1px solid red; }
+    border-bottom: 2px solid red;
+    opacity: 1; }
 
 .form__label {
   font-size: 1rem;
