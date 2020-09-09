@@ -15,6 +15,7 @@
     display: block;
     letter-spacing: 2.2rem;
     text-shadow: 0 1rem 4rem rgba(#000, 0.6);
+    
   }
   &--sub {
     font-weight: 300;
@@ -30,6 +31,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    
   }
 }
 
@@ -46,6 +48,7 @@
   &:hover {
     transform: scale(1.1);
   }
+  
 }
 
 .heading-tertiary {
@@ -57,4 +60,3 @@
   font-size: 1.2rem;
   color: #777;
 }
-

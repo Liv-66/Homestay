@@ -1,18 +1,32 @@
 .section-about {
   background-color: #f7f7f7;
-  padding: 4rem 2rem 35rem 2rem;
+  padding: 4rem 2rem 40rem 2rem;
   position: relative;
+  @include respond(tab-port) {
+    padding: 4rem 2rem 52rem 2rem;
+  }
 }
 
 .section-room {
   background-color: #f7f7f7;
   padding: 2rem 10rem 10rem 10rem;
   position: relative;
-  
+  @include respond(tab-port) {
+    padding: 2rem 5rem 10rem 5rem;
+  }
+  @include respond(phone) {
+    padding: 2rem 1rem 10rem 1rem;
+  }
 }
 
 .section-form {
   background-color: #f7f7f7;
   padding: 0 10rem 10rem 10rem;
   position: relative;
+  @include respond(tab-port) {
+    padding: 0 5rem 10rem 5rem;
+  }
+  @include respond(phone) {
+    padding: 0 1rem 10rem 1rem;
+  }
 }

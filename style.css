@@ -12,6 +12,21 @@ body {
   box-sizing: border-box;
   padding: 2rem; }
 
+html {
+  font-size: 100%; }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 70%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 120%; } }
+
 .header {
   height: 90vh;
   background-image: linear-gradient(to right, rgba(238, 238, 238, 0.6) 0%, rgba(238, 238, 238, 0.6) 100%), url(./img/header.jpg);
@@ -34,22 +49,50 @@ body {
     transform: translate(-50%, -50%); }
 
 .photo-box {
-  position: relative; }
+  position: relative;
+  width: 23rem; }
 
 .photo {
   position: absolute;
-  width: 23rem;
+  width: 100%;
   transition: all, 0.2s;
   border-radius: 3px; }
+  @media screen and (max-width: 56.25em) {
+    .photo {
+      width: 80%; } }
   .photo-1 {
     left: 7rem;
     top: 1rem; }
+    @media screen and (max-width: 56.25em) {
+      .photo-1 {
+        left: 5rem;
+        top: 0rem; } }
+    @media screen and (max-width: 37.5em) {
+      .photo-1 {
+        left: 0rem;
+        top: 0rem; } }
   .photo-2 {
     left: 0rem;
     top: 8rem; }
+    @media screen and (max-width: 56.25em) {
+      .photo-2 {
+        left: 5rem;
+        top: 13rem; } }
+    @media screen and (max-width: 37.5em) {
+      .photo-2 {
+        left: 12rem;
+        top: 0rem; } }
   .photo-3 {
     left: 14rem;
     top: 10rem; }
+    @media screen and (max-width: 56.25em) {
+      .photo-3 {
+        left: 5rem;
+        top: 26rem; } }
+    @media screen and (max-width: 37.5em) {
+      .photo-3 {
+        left: 24rem;
+        top: 0rem; } }
   .photo:hover {
     transform: scale(1.2);
     z-index: 10;
@@ -65,6 +108,12 @@ body {
     width: calc((100% - 6rem) / 2); }
     .row .col-1-of-2:not(:last-child) {
       margin-right: 6rem; }
+      @media screen and (max-width: 56.25em) {
+        .row .col-1-of-2:not(:last-child) {
+          margin-right: 2rem; } }
+    @media screen and (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: calc((100% - 6rem) / 1); } }
   .row .col-1-of-3 {
     float: left;
     width: calc((100% - 2 * 6rem) / 3); }
@@ -72,7 +121,7 @@ body {
       margin-right: 6rem; }
   .row .col-2-of-3 {
     float: left;
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
     .row .col-2-of-3:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-4 {
@@ -82,12 +131,12 @@ body {
       margin-right: 6rem; }
   .row .col-2-of-4 {
     float: left;
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
     .row .col-2-of-4:not(:last-child) {
       margin-right: 6rem; }
   .row .col-3-of-4 {
     float: left;
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
     .row .col-3-of-4:not(:last-child) {
       margin-right: 6rem; }
 
@@ -110,18 +159,33 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 4rem 2rem 35rem 2rem;
+  padding: 4rem 2rem 40rem 2rem;
   position: relative; }
+  @media screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 4rem 2rem 52rem 2rem; } }
 
 .section-room {
   background-color: #f7f7f7;
   padding: 2rem 10rem 10rem 10rem;
   position: relative; }
+  @media screen and (max-width: 56.25em) {
+    .section-room {
+      padding: 2rem 5rem 10rem 5rem; } }
+  @media screen and (max-width: 37.5em) {
+    .section-room {
+      padding: 2rem 1rem 10rem 1rem; } }
 
 .section-form {
   background-color: #f7f7f7;
   padding: 0 10rem 10rem 10rem;
   position: relative; }
+  @media screen and (max-width: 56.25em) {
+    .section-form {
+      padding: 0 5rem 10rem 5rem; } }
+  @media screen and (max-width: 37.5em) {
+    .section-form {
+      padding: 0 1rem 10rem 1rem; } }
 
 .margin-top-small {
   margin-top: 2rem; }
