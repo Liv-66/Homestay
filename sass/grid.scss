@@ -6,6 +6,7 @@ $gutter-horizontal-small: 2rem;
 .row {
   max-width: $grid-width;
   margin: 0 auto;
+  
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
@@ -19,11 +20,14 @@ $gutter-horizontal-small: 2rem;
       @include respond(tab-port) {
         margin-right: $gutter-horizontal-small;
       }
+      @include respond(phone) {
+        margin-right: 0;
+      }
      
     }
     width: calc((100% - #{$gutter-horizontal}) / 2);
     @include respond(phone) {
-      width: calc((100% - #{$gutter-horizontal}) / 1);
+      width: 100%;
     }
   }
 

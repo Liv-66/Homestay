@@ -13,16 +13,16 @@ body {
   padding: 2rem; }
 
 html {
-  font-size: 100%; }
-  @media screen and (max-width: 90em) {
-    html {
-      font-size: 70%; } }
-  @media screen and (max-width: 56.25em) {
+  font-size: 75%; }
+  @media screen and (max-width: 75em) {
     html {
       font-size: 60%; } }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media screen and (max-width: 41.5em) {
+    html {
+      font-size: 40%; } }
   @media screen and (min-width: 112.5em) {
     html {
       font-size: 120%; } }
@@ -67,7 +67,7 @@ html {
       .photo-1 {
         left: 5rem;
         top: 0rem; } }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 41.5em) {
       .photo-1 {
         left: 0rem;
         top: 0rem; } }
@@ -78,7 +78,7 @@ html {
       .photo-2 {
         left: 5rem;
         top: 13rem; } }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 41.5em) {
       .photo-2 {
         left: 12rem;
         top: 0rem; } }
@@ -89,7 +89,7 @@ html {
       .photo-3 {
         left: 5rem;
         top: 26rem; } }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 41.5em) {
       .photo-3 {
         left: 24rem;
         top: 0rem; } }
@@ -111,9 +111,12 @@ html {
       @media screen and (max-width: 56.25em) {
         .row .col-1-of-2:not(:last-child) {
           margin-right: 2rem; } }
-    @media screen and (max-width: 37.5em) {
+      @media screen and (max-width: 41.5em) {
+        .row .col-1-of-2:not(:last-child) {
+          margin-right: 0; } }
+    @media screen and (max-width: 41.5em) {
       .row .col-1-of-2 {
-        width: calc((100% - 6rem) / 1); } }
+        width: 100%; } }
   .row .col-1-of-3 {
     float: left;
     width: calc((100% - 2 * 6rem) / 3); }
@@ -172,9 +175,9 @@ html {
   @media screen and (max-width: 56.25em) {
     .section-room {
       padding: 2rem 5rem 10rem 5rem; } }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 41.5em) {
     .section-room {
-      padding: 2rem 1rem 10rem 1rem; } }
+      padding: 2rem 1rem 12rem 1rem; } }
 
 .section-form {
   background-color: #f7f7f7;
@@ -183,7 +186,7 @@ html {
   @media screen and (max-width: 56.25em) {
     .section-form {
       padding: 0 5rem 10rem 5rem; } }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 41.5em) {
     .section-form {
       padding: 0 1rem 10rem 1rem; } }
 
@@ -196,18 +199,21 @@ html {
   margin-bottom: 5rem; }
 
 .heading__primary {
-  color: #fff; }
+  color: #fff;
+  display: block;
+  text-align: center; }
   .heading__primary--main {
     font-weight: 500;
     display: block;
     letter-spacing: 2.2rem;
-    text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6); }
+    text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+    font-size: 5rem; }
   .heading__primary--sub {
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 1.5rem;
     display: block;
     font-size: 2.2rem;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1.4rem;
     background-image: linear-gradient(to right, #ffc374, #fff59b);
     -webkit-background-clip: text;
     background-clip: text;
@@ -250,10 +256,16 @@ html {
   background-size: cover;
   background-position: center;
   padding: 4rem 0; }
+  @media screen and (max-width: 41.5em) {
+    .form__box {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(./img/form.jpeg); } }
 
 .form__self {
   width: 50%;
   padding: 1rem; }
+  @media screen and (max-width: 41.5em) {
+    .form__self {
+      width: 100%; } }
 
 .form__group {
   width: 100%;
@@ -293,6 +305,9 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 4rem; }
+    @media screen and (max-width: 41.5em) {
+      .footer__logo-box {
+        left: 5%; } }
   .footer__logo {
     height: 100%; }
   .footer__nav {
@@ -300,19 +315,23 @@ html {
   .footer__list {
     display: inline-block; }
     .footer__list-item {
-      display: inline-block; }
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 1.5rem; }
+      @media screen and (max-width: 56.25em) {
+        .footer__list-item {
+          margin: 0 .5rem; } }
   .footer__link {
+    color: #ffc374;
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem; }
-  .footer__copy {
-    text-align: center; }
+    transition: all .2s; }
+    .footer__link:hover {
+      background-color: #fff;
+      border-radius: 3px;
+      color: #000; }
+  .footer__copyright {
+    text-align: right;
+    margin-top: 2rem; }
   .footer__text {
     color: #fff;
     font-size: 1rem; }
-  .footer__copyright {
-    color: #fff;
-    font-size: 1rem; }
-  .footer__copylink {
-    color: #ffc374;
-    text-decoration: none; }

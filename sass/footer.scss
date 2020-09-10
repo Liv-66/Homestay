@@ -9,6 +9,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 4rem;
+    @include respond(phone) {
+      left: 5%;
+    }
   }
   &__logo {
     height: 100%;
@@ -18,33 +21,37 @@
   }
   &__list {
     display: inline-block;
+    
 
 
     &-item {
       display: inline-block;
-
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      @include respond(tab-port) {
+        margin: 0 .5rem;
+      }
     }
   }
   &__link {
+    color: rgb(255, 195, 116);
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    transition: all .2s;
+    &:hover {
+      background-color: #fff;
+      border-radius: 3px;
+      color:#000;
+    }
   }
-  &__copy {
-    text-align: center;
+  &__copyright {
+    text-align: right;
+    margin-top: 2rem;
   }
 
   &__text {
     color: #fff;
     font-size: 1rem;
+    
   }
-  &__copyright {
-      
-    color: #fff;
-    font-size: 1rem;
-  }
-  &__copylink {
-    color: rgb(255, 195, 116);
-    text-decoration: none;
-  }
+  
 }
