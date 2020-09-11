@@ -15,7 +15,10 @@
     padding: 2rem 5rem 10rem 5rem;
   }
   @include respond(phone) {
-    padding: 2rem 1rem 10rem 1rem;
+    padding: 2rem 1rem 12rem 1rem;
+  }
+  @include respond(skip) {
+    padding: 2rem 1rem 18rem 1rem;
   }
 }
 

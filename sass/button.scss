@@ -1,3 +1,19 @@
-.button {
+.button__form {
   text-decoration: none;
+  border: none;
+  background-color: rgb(255, 195, 116);
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  color: #fff;
+  transition: all, .2s;
+  box-shadow: 0 .5rem 1rem rgba(#000, .2);
+  &:hover {
+    transform: scale(1.1)
+    
+  }
+  &:active {
+    outline: none;
+    transform: translateY(.5rem);
+    
+  }
 }

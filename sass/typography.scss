@@ -10,19 +10,22 @@
 
 .heading__primary {
   color: #fff;
+  display: block;
+  text-align: center;
   &--main {
     font-weight: 500;
     display: block;
     letter-spacing: 2.2rem;
     text-shadow: 0 1rem 4rem rgba(#000, 0.6);
+    font-size: 5rem;
     
   }
   &--sub {
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 1.5rem;
     display: block;
     font-size: 2.2rem;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1.4rem;
     background-image: linear-gradient(
       to right,
       rgb(255, 195, 116),

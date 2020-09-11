@@ -10,6 +10,9 @@
   @include respond(tab-port) {
     width: 80%;
   }
+  @include respond(hidden) {
+    display: none;
+  }
   &-1 {
     left: 7rem;
     top: 1rem;

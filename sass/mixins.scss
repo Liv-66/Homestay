@@ -1,6 +1,7 @@
 @mixin respond($screen) {
+  
   @if $screen == phone {
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 41.5em) {
       @content;
     }
   }
@@ -19,4 +20,5 @@
       @content;
     }
   }
+  
 }
